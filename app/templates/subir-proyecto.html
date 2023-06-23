@@ -1,3 +1,30 @@
-{% extends 'index.html' %} {% block content %}
-<h1>Subir proyectos</h1>
+{% extends 'index.html' %} 
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/subirproyec.css' %}">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="caja">
+                <h1>Bienvenido a <strong>Baselltech</strong></h1>
+                <form action="" method="get">
+                    <label for="nombre-proyecto"></label>
+                    <input type="text"  id="nombre-proyecto" placeholder="nombre de proyecto">
+                    <label for=""></label>
+                    <input type="text" name="" id="">
+                    <label for=""></label>
+                    <input type="text" name="" id="">
+                    <label for="">ingresa url de repositorio</label>
+                    <input type="url" name="" id="">
+                    <h4>documento con el resumen</h4>
+                    <label for="">Documento</label>
+                    <input type="file" name="" id="">
+                    <button type="submit">Subir</button>
+                </form>
+                
+            </section>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

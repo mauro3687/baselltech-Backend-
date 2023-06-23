@@ -18,6 +18,9 @@ def subirprojec(request):
     
 def signup(request):
     return render(request, 'signup.html')
+
 def registro(request):
     return render(request, 'registro.html')
+def carrito(request):
+    return render(request, 'carrito.html')
 

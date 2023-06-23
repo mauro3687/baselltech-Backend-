@@ -29,5 +29,6 @@ urlpatterns = [
     path('subirproyec/',views.subirprojec),
     path('signup/',views.signup),
     path('registro/',views.registro),
+    path('carrito/',views.carrito),
    
 ]
