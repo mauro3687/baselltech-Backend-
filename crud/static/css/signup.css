@@ -1,0 +1,59 @@
+.formulario {
+  background: #333435;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(112, 177, 199, 0.568);
+  color: rgb(255, 153, 0);
+  height: 450px;
+  width: 60%;
+}
+.inicio {
+  color: var(--color--1);
+}
+.form-control {
+  background: #333435;
+  border-style: none;
+  transition: 0.5 ease-in;
+  outline: none;
+  box-shadow: none;
+}
+.form-control:placeholder {
+  color: white;
+}
+.form-control:focus {
+  background: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid #cfb3f3;
+  outline: none;
+  color: #fff;
+}
+.ingresar {
+  background: #ffdf0e;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 1000 !important;
+  color: rgb(213, 19, 19);
+  box-shadow: 0 0 30px rgba(149, 143, 235, 0.989);
+  transition: 0.5 ease-in;
+}
+
+.olvide {
+  color: white;
+  text-decoration-style: none;
+}
+.olvide :hover {
+  color: rgb(14, 86, 114);
+  text-decoration-style: none;
+  text-size-adjust: none;
+  cursor: pointer;
+}
+.olvide1 {
+  /* color: rgb(208, 31, 31); */
+  /* text-decoration: none; */
+  /* text-decoration-line: none; */
+  /* font-size: 20px; */
+  font-weight: 700 !important;
+  /* height: 20px; */
+  /* padding: 10px; */
+  /* border-radius: 10px; */
+}
