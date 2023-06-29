@@ -6,20 +6,21 @@
         <section class="caja">
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="" method="get" class="form">
+                    <form action="" method="post" class="form">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-lg-12 user">
                                 <h1 class="text-warning"><strong>Baselltech</strong></h1>
                             </div>
                             <div class="col-lg-12 user">
                                 <label for="nombre-proyecto" >Nombre proyecto</label>
-                                    <input type="text" id="nombre-proyecto" maxlength="15" minlength="3" required placeholder="nombre de proyecto"/>
+                                    <input type="text" name="nombre" id="nombre-proyecto" maxlength="15" minlength="3" required placeholder="nombre de proyecto"/>
                             </div>
                             <div class="col-lg-12 user">
                                 <label for="descripcion-de-proyecto">Descripcion</label>
                                 <input
                                     type="text"
-                                    name=""
+                                    name="descripcion-de-proyecto"
                                     id="descripcion-de-proyecto"
                                     placeholder="Descripcion de tu proyecto"
                                 />
@@ -28,14 +29,14 @@
                                 <label for="inversion-proyecto">Inversion de tu proyecto</label>
                                 <input
                                     type="text"
-                                    name=""
+                                    name="inversion-proyecto"
                                     id="inversion-proyecto"
                                     placeholder="ingrese un monto estimado"
                                 />
                             </div>
                             <div class="col-lg-12 user">
                                 <label for="">ingresa url de repositorio</label>
-                                <input type="url" name="" id="" required placeholder="Ingresa url del proyecto"/>
+                                <input type="url" name="repositorio" id="" required placeholder="Ingresa url del proyecto"/>
                             </div>
                             <div class="col-lg-12 user">
                                 <label for="archivo-proyecto">Imagenes</label>
